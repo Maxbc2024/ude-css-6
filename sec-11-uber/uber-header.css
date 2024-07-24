@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+html {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    background: #FFF;
+    font-size: 10px;
+}
+
+
+/* --------------------------------------------------------------------------- */
+
+body {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #262;
+
+    display: grid;
+    /* fila / columna */
+    grid: 74px 1fr max-content / 1fr;
+}
+
+/* ----------------- header -------------------- */
+
+body > header {
+    display: grid;
+    /* lado = X */
+    justify-items: center;
+
+    /* = */
+
+    /* display: flex; */
+    /* justify-content: center;  */
+    /* background: #007340; */
+    background: blue;
+}
+
+#header-container{
+    /* arriba y abajo | izquierda y derecha */
+    padding: 0 16px;
+}
+
+#header-container{
+    background: #007340;
+    /* box-shadow: 0 20px 50px -20px #007340; */
+    z-index: 1;
+
+    display: grid;
+    /* fila columna */
+    grid: 40px / 1fr 40px;
+    grid-column-gap: 10px;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1238px;
+}
+
+#header-container > a{
+    display: flex;
+    align-items: center;
+}
+/* logo */
+#header-container > a > img{
+    height: 30px;
+}
+/* icono profile */
+#header-container > img {
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#delivery-widget-container {
+    display: none;
+}
+
+
+/* ------------------ responsive -------------- */
+
+/*  >= 768px */
+@media (min-width: 768px) {
+    #header-container{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+
+/*  >= 1024px */
+@media (min-width: 1024px) {
+    /* header */
+    #header-container {
+        /* crea 3 columnas */
+        grid-template-columns: repeat(2, max-content) 40px;
+        justify-content: space-between;
+    }
+
+    #delivery-widget-container {
+        display: grid;
+        /* crea 3 columnas */
+        grid: 1fr / repeat(2, max-content) 270px;
+        grid-column-gap: 10px;
+        align-self: stretch;
+        font-size: 1.4rem;
+        color: #FD0;
+    }
+
+    #delivery-widget-time {
+        display: flex;
+        align-items: center;
+        border: 1px solid #FD0;
+        padding: 0 12px;
+    }
+
+    #delivery-widget-label {
+        display: flex;
+        align-items: center;
+    }
+
+    #delivery-widget-address {
+        display: flex;
+        position: relative;
+    }
+
+    #delivery-widget-address > img {
+        position: absolute;
+        left: 16px;
+        top: 12px;
+        width: 16px;
+        height: 16px;
+    }
+
+    #delivery-widget-address > input {
+        flex: 1 0 0%;
+        padding-left: 48px;
+        padding-right: 16px;
+        font-size: 1.4rem;
+        color: #262;
+        background: #EFE;
+        outline: none;
+        border: 2px solid #FD0;
+        border-radius: 4px;
+    }
+
+  
+
+}
+
+

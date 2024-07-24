@@ -17,12 +17,15 @@ body {
     font-size: 1.6rem;
 }
 
+/* --------------------------------------------------------------- */
+
 .container {
     background: #FFF;
     border-radius: 5px;
     margin: 0;
     height: 100%;
     padding: 50px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,9 +51,11 @@ fieldset {
 }
 
 .form-fields {
+
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-row-gap: 1rem;
+    /* el contenido esta centrado */
     align-items: center;
 }
 

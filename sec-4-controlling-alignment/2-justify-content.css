@@ -6,6 +6,7 @@
 }
 
 .start-container {
+    /* alinea por X */
     justify-content: start;
 }
 

@@ -16,10 +16,14 @@ body {
     padding: 20px 50px;
 }
 
+/* --------------------------------------------------------------- */
+
+
 .container {
     display: grid;
     /* align-content: center; */
     align-items: end;
+    
     background: #FFF;
     font-size: 1.6rem;
     height: 100%;

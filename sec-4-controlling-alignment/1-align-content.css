@@ -6,6 +6,7 @@
 }
 
 .start-container {
+    /* alinea por Y */
     align-content: start;
 }
 
