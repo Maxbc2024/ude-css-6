@@ -11,24 +11,23 @@ html {
 }
 
 body {
-    height: 100%;
-    box-sizing: border-box;
-    padding: 20px 50px;
-}
-
-.container {
     display: grid;
-    /* grid-template-columns: repeat(4, 1fr); */
-    grid-auto-flow: column;
-    background: #FFF;
+    grid-template-rows: 95px 1fr 95px;
     height: 100%;
-    box-sizing: border-box;
 }
 
-.column {
-    font-size: 1.6rem;
+header, footer, main {
     padding: 20px;
+}
+
+main {
+    background: #FFF;
+}
+
+header, footer {
     background: #0048AA;
+}
+
+header h1, footer h2 {
     color: #FFF;
-    border: 2px solid #EEE;
 }

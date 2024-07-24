@@ -11,19 +11,21 @@ html {
 }
 
 body {
-    padding: 20px 50px;
-    font-size: 1.6rem;
-}
-
-ul {
-    background: #FFF;
-    padding: 50px;
-    padding-top: 10px;
-    list-style: none;
-}
-
-li {
-    padding: 15px;
+    height: 100%;
     box-sizing: border-box;
-    border-radius: 5px;
+    padding: 20px 50px;
+}
+
+.container {
+    background: #FFF;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.item {
+    font-size: 1.6rem;
+    padding: 20px;
+    background: #0048AA;
+    color: #FFF;
+    border: 2px solid #EEE;
 }

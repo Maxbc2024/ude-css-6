@@ -16,19 +16,35 @@ body {
     padding: 20px 50px;
 }
 
-.container {
+.overlay {
     display: grid;
-    /* grid-template-columns: repeat(4, 1fr); */
-    grid-auto-flow: column;
+    grid: 1fr / 1fr;
+    place-items: center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0, 0.3);
+}
+
+.modal-container {
     background: #FFF;
-    height: 100%;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
-.column {
+.modal-content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
     font-size: 1.6rem;
-    padding: 20px;
-    background: #0048AA;
-    color: #FFF;
-    border: 2px solid #EEE;
+    margin-top: 1.4rem;
 }

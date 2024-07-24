@@ -16,19 +16,31 @@ body {
     padding: 20px 50px;
 }
 
-.container {
+main {
     display: grid;
-    /* grid-template-columns: repeat(4, 1fr); */
-    grid-auto-flow: column;
-    background: #FFF;
+    grid-template-columns: 180px 1fr;
     height: 100%;
-    box-sizing: border-box;
 }
 
-.column {
-    font-size: 1.6rem;
-    padding: 20px;
+aside {
     background: #0048AA;
     color: #FFF;
-    border: 2px solid #EEE;
+    font-size: 1.6rem;
+}
+
+section {
+    background: #FFF;
+}
+
+aside, section {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.6rem;
+    margin-top: 1.4rem;
 }
