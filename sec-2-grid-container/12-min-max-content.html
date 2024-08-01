@@ -7,6 +7,11 @@
     <link rel="stylesheet" type="text/css" media="screen" href="12-min-max-content.css" />
 </head>
 <body>
+
+    <br>
+    <br>
+    <h1>grid-template-columns: min-content 200px;</h1>
+    <hr>
     <div class="container min-content-container">
         <div class="item">
             This is reasonably long text, and as you can see, the cell is not that big and the text collapses. 
@@ -15,6 +20,10 @@
         <div class="item"></div>
     </div>
 
+    <br>
+    <br>
+    <h1>grid-template-columns: minmax(min-content, min-content) 200px;</h1>
+    <hr>
     <div class="container min-content-min-content-container">
         <div class="item">
             This is reasonably long text, and as you can see, the cell is not that big and the text collapses. 
@@ -23,6 +32,10 @@
         <div class="item"></div>
     </div>
 
+    <br>
+    <br>
+    <h1>grid-template-columns: max-content 200px;</h1>
+    <hr>
     <div class="container max-content-container">
         <div class="item">
             This is reasonably long text, and as you can see it makes this cell really big. 
@@ -31,6 +44,10 @@
         <div class="item"></div>
     </div>
 
+    <br>
+    <br>
+    <h1> grid-template-columns: minmax(max-content, max-content) 200px;</h1>
+    <hr>
     <div class="container max-content-max-content-container">
         <div class="item">
             This is reasonably long text, and as you can see it makes this cell really big. 
@@ -39,6 +56,10 @@
         <div class="item"></div>
     </div>
 
+    <br>
+    <br>
+    <h1> grid-template-columns: minmax(min-content, max-content) 200px;</h1>
+    <hr>
     <div class="container min-max-content-container">
         <div class="item">
             This is reasonably long text, that based on the width of you window can go from being really small in width with text collaped, to
