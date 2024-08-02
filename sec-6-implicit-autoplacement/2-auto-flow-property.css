@@ -28,6 +28,8 @@
 }
 
 .spanned-item-row-flow-container > .item:nth-of-type(3) {
+    background-color: bisque;
+
     grid-column: span 2;
     grid-row: span 2;
 }
@@ -39,6 +41,8 @@
 }
 
 .spanned-item-column-flow-container > .item:nth-of-type(2) {
+    background-color: aqua;
+
     grid-column: span 2;
     grid-row: span 2;
 }
@@ -55,6 +59,7 @@
 }
 
 .positioned-item {
+    background-color: tomato;
     grid-column: 2 / 4;
     grid-row: 2 / 4;
 }
