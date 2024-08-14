@@ -36,6 +36,8 @@ body {
     border-radius: 10px;
 }
 
+/* <!-- -------------------- search-container  ------------------------- --> */
+
 #search-container,
 #conversation-list,
 #new-message-container {
@@ -71,6 +73,8 @@ body {
     color: #ddd;
     font-weight: bold;
 }
+
+/* <!-- -------------------- conversation-list ------------------------- --> */
 
 #conversation-list {
     grid-area: conversation-list;
@@ -126,6 +130,9 @@ body {
     text-overflow: ellipsis;
 }
 
+/* <!-- -------------------- new-message-container ------------------------- --> */
+
+
 #new-message-container {
     display: grid;
     grid: 40px / 40px;
@@ -145,6 +152,9 @@ body {
     text-decoration: none;
     font-size: 3.6rem;
 }
+
+/* <!-- -------------------- chat-title ------------------------- --> */
+
 
 #chat-title,
 #chat-form {
@@ -169,6 +179,8 @@ body {
 #chat-form > img {
     cursor: pointer;
 }
+
+/* <!-- -------------------- chat-message-list ------------------------- --> */
 
 #chat-message-list {
     grid-area: chat-message-list;
@@ -234,6 +246,8 @@ body {
     border: 1px solid #ddd;
     border-radius: 14px 14px 14px 0;
 }
+
+/* <!-- ------------------ chat-form ------------------ --> */
 
 #chat-form {
     display: grid;
