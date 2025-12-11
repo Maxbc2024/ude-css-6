@@ -2,6 +2,10 @@
     display: grid;
 }
 
+.basic-container {
+    grid-template: repeat(2, 100px) / repeat(2, 200px);
+}
+
 .span-both-line-names-container > .item:first-of-type {
     grid-area: rowLineStart / colLineStart / rowLineEnd / colLineEnd;
 }
@@ -22,9 +26,7 @@
     grid-area: item-4;
 }
 
-.basic-container {
-    grid-template: repeat(2, 100px) / repeat(2, 200px);
-}
+
 
 .span-both-line-names-container {
     grid-template:
