@@ -20,12 +20,8 @@ body {
     place-items: center center;
 }
 
-/* ************************************************************************************** */
-
-
 #chat-container {
     display: grid;
-    /* FILAS | COLUMNAS */
     grid:
         'search-container chat-title' 71px
         'conversation-list chat-message-list' 1fr
@@ -42,15 +38,16 @@ body {
 
 /* <!-- -------------------- search-container  ------------------------- --> */
 
-#search-container{
-    /* background-color: fuchsia; */
-
+#search-container,
+#conversation-list,
+#new-message-container {
     background: #0048AA;
+}
 
+#search-container {
     display: grid;
     align-items: center;
     grid-area: search-container;
-
     padding: 0 20px;
     border-radius: 10px 0 0 0;
     box-shadow: 0 1px 3px -1px rgba(0,0,0,0.75);
@@ -80,21 +77,14 @@ body {
 /* <!-- -------------------- conversation-list ------------------------- --> */
 
 #conversation-list {
-    /* background-color: burlywood; */
-
-    background: #0048AA;
     grid-area: conversation-list;
-    /* SCROLL Y */
     overflow-y: scroll;
 }
 
-
 .conversation {
     display: grid;
-    /*  COLUMNAS */
     grid-template-columns: 40px 1fr max-content;
     grid-gap: 10px;
-
     color: #ddd;
     font-size: 1.3rem;
     border-bottom: 1px solid #002C88;
@@ -111,9 +101,7 @@ body {
 }
 
 .conversation > img {
-    /* ???? */
     grid-row: span 2;
-
     height: 40px;
     width: 40px;
     border-radius: 100%;
@@ -135,9 +123,7 @@ body {
 }
 
 .conversation-message {
-    /* ????? */
     grid-column: span 2;
-
     padding-left: 5px;
     white-space: nowrap;
     overflow-x: hidden;
@@ -146,11 +132,8 @@ body {
 
 /* <!-- -------------------- new-message-container ------------------------- --> */
 
+
 #new-message-container {
-    /* background-color: cornflowerblue; */
-
-    background: #0048AA;
-
     display: grid;
     grid: 40px / 40px;
     align-content: center;
@@ -159,7 +142,7 @@ body {
     border-radius: 0 0 0 10px;
     padding: 0 15px;
 }
-/* BOTON + */
+
 #new-message-container a {
     display: grid;
     place-content: center center;
@@ -170,13 +153,15 @@ body {
     font-size: 3.6rem;
 }
 
-
 /* <!-- -------------------- chat-title ------------------------- --> */
 
-#chat-title {
-    /* background-color: red; */
 
+#chat-title,
+#chat-form {
     background: #eee;
+}
+
+#chat-title {
     display: grid;
     grid: 36px / 1fr 36px;
     align-content: center;
@@ -196,9 +181,8 @@ body {
 }
 
 /* <!-- -------------------- chat-message-list ------------------------- --> */
-#chat-message-list {
-    /* background-color: brown; */
 
+#chat-message-list {
     grid-area: chat-message-list;
     display: flex;
     flex-direction: column-reverse;
@@ -207,8 +191,6 @@ body {
 }
 
 .message-row {
-    /* background-color: blueviolet; */
-
     display: grid;
     grid-template-columns: 70%;
     margin-bottom: 20px;
@@ -219,24 +201,21 @@ body {
 }
 
 .you-message {
-    /*  LADO DERECHO */
     justify-content: end;
 }
 
 .you-message .message-content {
-    /*  LADO DERECHO */
     justify-items: end;
 }
 
 .other-message {
-    /* justify-items: start; */
+    justify-items: start;
 }
 
 .other-message .message-content {
     grid-template-columns: 48px 1fr;
     grid-column-gap: 15px;
 }
-
 
 .message-row img {
     border-radius: 100%;
@@ -271,9 +250,6 @@ body {
 /* <!-- ------------------ chat-form ------------------ --> */
 
 #chat-form {
-    /* background-color: yellow; */
-
-    background: #eee;
     display: grid;
     grid: 51px / 32px 1fr;
     align-content: center;

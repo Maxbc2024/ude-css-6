@@ -9,4 +9,20 @@ https://blog.hubspot.es/website/css-grid
 https://adictosaltrabajo.com/2018/01/30/maquetacion-con-css-grid/
 
 
+****************************** sec 10 chat ************************
+
+
+
+
+****************************** sec 11 uber ************************
+
+
+****************************** sec 12 youtube ************************
+
+NOTA: falta Responsive
+
+
+
+
+
 
