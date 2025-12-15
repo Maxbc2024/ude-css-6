@@ -351,11 +351,11 @@ body > footer {
 }
 
 
-/* ------------------ responsive -------------- */
+/* ************************ responsive ********************* */
 
 /*  >= 576px */
 @media (min-width: 576px) {
-    /* crea dos columnas */
+    /* crea dos columnas en footer */
     #footer-links, #security-section {
         display: grid;
         grid: 1fr / repeat(2, 1fr);
@@ -380,6 +380,7 @@ body > footer {
     }
 
     #footer-links, #security-section {
+        /* crea 3 columnas footer */
         grid-template-columns: 1fr 2fr;
     }
 
@@ -391,6 +392,7 @@ body > footer {
 }
 
 
+
 /*  >= 1024px */
 @media (min-width: 1024px) {
     /* crea 3 columnas */
@@ -400,8 +402,7 @@ body > footer {
 }
 
 
-
-/*  >= 1024px */
+/* ---------------------  1024px < */
 @media (min-width: 1024px) {
     /* header */
     /* body > header { */
@@ -459,6 +460,7 @@ body > footer {
 
     /* body > main { */
     #main-container{
+        /* FILAS | COLUMNAS */
         grid:
             'store-search' max-content
             'store-list' 1fr 

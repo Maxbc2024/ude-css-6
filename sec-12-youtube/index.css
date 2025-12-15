@@ -479,9 +479,129 @@ main {
 /* *********************responsive******************* */
 
 
+/* 550px <  */
+@media (min-width: 550px) {
+    main {
+        grid-template-areas: 
+            'video-thumbnail'
+            'video-details'
+            'video-comments'
+            'related-videos';
+    }
+    
+    #related-videos {
+        /* borra la linea al final */
+        border-bottom: 0;
+    }
+
+    #related-videos > ul {
+        display: grid;
+        /* FILAS | COLUMNAS */
+        grid: auto-flow max-content / repeat(2, 1fr);
+        grid-gap: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    #related-videos > ul > li {
+        margin-bottom: 0;
+    }
+
+    #related-videos > ul > li article {
+        display: block;
+        min-height: inherit;
+        max-height: inherit;
+    }
+
+    #related-videos > ul > li img {
+        height: 26.6vw;
+        min-height: 141px;
+        max-height: 202px;
+    }
+
+    .related-video-details h4 {
+        padding-top: 4px;
+    }
+
+    #video-comments {
+        border-bottom: 1px solid rgba(136, 136, 136, 0.4);
+    }
+}
+
+/* 768px <  */
+@media (min-width: 768px) {
+    /* 3 columnas */
+    #related-videos > ul { 
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #related-videos > ul > li img {
+        height: 17.5vw;
+        min-height: 131px;
+        max-height: inherit;
+    }
+}
 
 
+/* --------------------- 800px <    */
+@media (min-width: 800px) and (orientation: landscape) {
+    body > header {
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        right: 0;
+        height: 48px;
+    }
+
+    main {
+        grid:
+            'video-thumbnail related-videos' max-content
+            'video-details related-videos' max-content
+            'video-comments related-videos' 1fr
+            / 1fr 256px;
+        margin-top: 48px;
+    }
+    
+    #related-videos {
+        padding-left: 8px;
+        padding-right: 8px;
+        overflow: scroll;
+        position: fixed;
+        width: 256px;
+        top: 48px;
+        right: 0;
+        bottom: 0;
+    }
+
+    #related-videos > ul {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #related-videos > ul > li img {
+        height: 135px;
+        min-height: inherit;
+        max-height: inherit;
+    }
+
+    #video-comments {
+        border-bottom: 0;
+    }
+}
 
 
+/* --------------------- 1280px <    */
+@media (min-width: 1280px) and (orientation: landscape) {
+    main {
+        grid-template-columns: 1fr 500px;
+    }
 
+    #related-videos {
+        width: 500px;
+    }
 
+    #related-videos > ul { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
